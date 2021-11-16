@@ -1,0 +1,29 @@
+{
+  "name": "tech-blog2",
+  "version": "1.0.0",
+  "description": "Model, Views,  Controllers",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomioh/tech-blog2.git"
+  },
+  "author": "Noyemi Ohanyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nomioh/tech-blog2/issues"
+  },
+  "homepage": "https://github.com/nomioh/tech-blog2#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.1",
+    "handlebars": "^4.7.7",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.9.0"
+  }
+}
