@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+    <header>
+      <h2>
+        <a href="/">Tech Blog</a>
+      </h2>
+      <nav>
+        {{#if loggedIn}}
+        <a href="/" class="pr-3 text-primary">homepage</a>
+        <a href="/dashboard" class="pr-3 text-primary">dashboard</a>
+        <button id="logout">logout</button>
+        {{else}}
+        <a href="/" class="pr-3 text-primary">homepage</a>
+        <a href="/dashboard" class="pr-3 text-primary">dashboard</a>
+        <a href="/login" >login</a>
+        {{/if}}
+      </nav>
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+    <footer>
+      <h6 class="mt-2 pt-2 pb-2">
+      Thank you for visiting!
+      </h6>
+    </footer>
+  </div>
+  
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
